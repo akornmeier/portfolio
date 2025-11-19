@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxt/content',
@@ -9,32 +8,38 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     'motion-v/nuxt',
     '@nuxt/scripts',
-    '@nuxt/test-utils'
+    '@nuxt/test-utils',
   ],
 
   devtools: {
-    enabled: true
+    enabled: true,
   },
 
   css: ['~/assets/css/main.css'],
 
   compatibilityDate: '2024-11-01',
 
-  nitro: {
-    prerender: {
-      routes: [
-        '/'
-      ],
-      crawlLinks: true
-    }
+  image: {
+    quality: 80,
+    format: ['webp', 'jpg'],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+    },
   },
 
-  eslint: {
-    config: {
-      stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    }
-  }
+  ui: {
+    content: true,
+  },
+
+  nitro: {
+    prerender: {
+      routes: ['/'],
+      crawlLinks: true,
+    },
+  },
 })

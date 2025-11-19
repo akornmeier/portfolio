@@ -1,0 +1,37 @@
+# Build outputs
+.nuxt
+.output
+dist
+.vercel
+
+# Dependencies
+node_modules
+pnpm-lock.yaml
+
+# Cache
+.cache
+.turbo
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Git
+.git
+
+# IDE
+.vscode
+.idea
+
+# Generated files
+coverage
+*.min.js
+*.min.css
+
+# Content (preserve user formatting)
+# Remove this line if you want to format markdown/content files
+content/**/*.md

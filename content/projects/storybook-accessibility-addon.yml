@@ -1,0 +1,6 @@
+title: Storybook Accessibility Addon (Oculis)
+description: Currently experimenting with bringing real-time accessibility feedback to Storybook. The idea is simple—developers already live in Storybook for component development, so why not catch accessibility issues right there? I'm building this with a freemium model (free npm package, paid cloud features) inspired by how Chromatic does it. Still in the prototyping phase, but the monorepo is set up and I'm integrating the same observer patterns that made CAT successful.
+image: https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1470&q=80
+url: 'https://github.com/akornmeier'
+tags: ['Storybook', 'TypeScript', 'Accessibility', 'In Development']
+date: '2025'

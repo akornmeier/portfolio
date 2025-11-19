@@ -18,15 +18,12 @@ if (!posts.value) {
     :title="page.blog.title"
     :description="page.blog.description"
     :ui="{
-      container: 'px-0 !pt-0 sm:gap-6 lg:gap-8',
+      container: 'px-0 !pt-0',
       title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
-      description: 'text-left mt-2 text-sm sm:text-md lg:text-sm text-muted'
+      description: 'text-left mt-2 text-sm sm:text-md lg:text-sm text-muted',
     }"
   >
-    <UBlogPosts
-      orientation="vertical"
-      class="gap-4 lg:gap-y-4"
-    >
+    <UBlogPosts orientation="vertical" class="gap-4 lg:gap-y-4">
       <UBlogPost
         v-for="(post, index) in posts"
         :key="index"
@@ -36,21 +33,16 @@ if (!posts.value) {
         :to="post.path"
         :ui="{
           root: 'group relative lg:items-start lg:flex ring-0 hover:ring-0',
-          body: '!px-0',
-          header: 'hidden'
+          body: '!px-0 !pb-0',
+          header: 'hidden',
         }"
       >
         <template #footer>
-          <UButton
-            size="xs"
-            variant="link"
-            class="px-0 gap-0"
-            label="Read Article"
-          >
+          <UButton size="xs" variant="link" class="gap-0 px-0" label="Read Article">
             <template #trailing>
               <UIcon
                 name="i-lucide-arrow-right"
-                class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
+                class="text-primary size-4 opacity-0 transition-all group-hover:translate-x-1 group-hover:opacity-100"
               />
             </template>
           </UButton>

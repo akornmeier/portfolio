@@ -1,6 +1,7 @@
-title: Designing Interfaces, Building Experiences.
-description: I've worked on a variety of projects, focusing on creating intuitive digital experiences where thoughtful design meets clean code. Here are some highlights I'm proud of, showcasing my process from concept to execution.
+title: Building Tools Developers Love
+description: I build open source accessibility testing frameworks and developer tools that integrate seamlessly into existing workflows. From component-level testing to browser extensions, these projects focus on making accessibility testing effortless and developer experience exceptional.
 links:
-  - label: "Let's talk"
-    color: "neutral"
+  - label: 'View on GitHub'
+    to: https://github.com/akornmeier
+    color: 'neutral'
   - label: 'Email me'
