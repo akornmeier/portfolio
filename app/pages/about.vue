@@ -33,8 +33,9 @@ useSeoMeta({
         links: 'justify-start',
       }"
     >
+      <!-- '#ff4785', '#fc511f', ' -->
       <div
-        class="ring-default ring-offset-bg size-24 shrink-0 overflow-hidden rounded-lg ring-3 ring-offset-3 sm:size-28 sm:rotate-4 md:size-36 lg:size-44"
+        class="ring-offset-bg size-24 shrink-0 overflow-hidden rounded-lg ring-3 ring-[#fc511f] ring-offset-3 sm:size-28 sm:rotate-4 md:size-36 lg:size-44 dark:ring-[#ff4785]"
       >
         <NuxtImg
           :src="$colorMode.value === 'dark' ? global.picture2?.dark! : global.picture2?.light!"
