@@ -1,0 +1,6 @@
+title: Test Framework Integrations & Extensions
+description: Over the years, I've built a collection of accessibility testing integrations for the tools developers actually use. Test wrappers for Playwright and Cypress, a browser extension (WXT + Vue) for real-time feedback while you code, component linters for Vue, Angular, and Lit. Each one solves a specific pain point I've seen teams struggle with. It's all about meeting developers where they already are instead of forcing them to adopt new workflows.
+image: https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=1470&q=80
+url: 'https://github.com/akornmeier'
+tags: ['Playwright', 'Cypress', 'Browser Extensions', 'Vue']
+date: '2020'

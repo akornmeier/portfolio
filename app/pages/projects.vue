@@ -6,7 +6,7 @@ if (!page.value) {
   throw createError({
     statusCode: 404,
     statusMessage: 'Page not found',
-    fatal: true
+    fatal: true,
   })
 }
 
@@ -20,7 +20,7 @@ useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,
   ogTitle: page.value?.seo?.title || page.value?.title,
   description: page.value?.seo?.description || page.value?.description,
-  ogDescription: page.value?.seo?.description || page.value?.description
+  ogDescription: page.value?.seo?.description || page.value?.description,
 })
 </script>
 
@@ -33,33 +33,23 @@ useSeoMeta({
       :ui="{
         title: '!mx-0 text-left',
         description: '!mx-0 text-left',
-        links: 'justify-start'
+        links: 'justify-start',
       }"
     >
       <template #links>
-        <div
-          v-if="page.links"
-          class="flex items-center gap-2"
-        >
-          <UButton
-            :label="page.links[0]?.label"
-            :to="global.meetingLink"
-            v-bind="page.links[0]"
-          />
-          <UButton
-            :to="`mailto:${global.email}`"
-            v-bind="page.links[1]"
-          />
+        <div v-if="page.links" class="flex items-center gap-2">
+          <UButton :label="page.links[0]?.label" :to="global.github" v-bind="page.links[0]" />
+          <UButton :to="`mailto:${global.email}`" v-bind="page.links[1]" />
         </div>
       </template>
     </UPageHero>
     <UPageSection
       :ui="{
-        container: '!pt-0'
+        container: '!pt-0',
       }"
     >
       <Motion
-        v-for="(project, index) in projects"
+        v-for="(project, index) in projects?.sort((a, b) => parseInt(b.date) - parseInt(a.date))"
         :key="project.title"
         :initial="{ opacity: 0, transform: 'translateY(10px)' }"
         :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
@@ -75,31 +65,28 @@ useSeoMeta({
           :reverse="index % 2 === 1"
           class="group"
           :ui="{
-            wrapper: 'max-sm:order-last'
+            wrapper: 'max-sm:order-last',
           }"
         >
           <template #leading>
-            <span class="text-sm text-muted">
+            <span class="text-muted text-sm">
               {{ new Date(project.date).getFullYear() }}
             </span>
           </template>
           <template #footer>
-            <ULink
-              :to="project.url"
-              class="text-sm text-primary flex items-center"
-            >
+            <ULink :to="project.url" class="text-primary flex items-center text-sm">
               View Project
               <UIcon
                 name="i-lucide-arrow-right"
-                class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
+                class="text-primary size-4 opacity-0 transition-all group-hover:translate-x-1 group-hover:opacity-100"
               />
             </ULink>
           </template>
           <img
             :src="project.image"
             :alt="project.title"
-            class="object-cover w-full h-48 rounded-lg"
-          >
+            class="h-48 w-full rounded-lg object-cover"
+          />
         </UPageCard>
       </Motion>
     </UPageSection>

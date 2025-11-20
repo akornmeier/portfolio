@@ -1,27 +1,43 @@
 title: About Me
-description: Learn more about my journey as a Boston-based UX/UI Designer & Front-End Developer, my design philosophy, and my passion for crafting intuitive digital experiences.
+description: Learn more about my journey as a Principal Frontend Engineer specializing in accessibility infrastructure, testing tools, and open source development.
 content: |
-  Hi, I'm **Emma Thompson**, a UX/UI Designer and Front-End Developer based right here in Boston. For the past six years, I've been immersed in the world of digital product creation, focusing on building experiences that are not just functional, but genuinely intuitive and engaging for users.
+  Hi, I'm **Tony Kornmeier**, a Principal Frontend Engineer and Open Source Contributor based in Maumee, OH. For over a decade, I've been passionate about building developer tools that make the web more accessible for everyone.<br /><br />
 
-  My path started at **Boston University**, where I earned a degree in Interactive Design. It was there I discovered my dual passion for the visual language of design and the logical puzzle of code. Since then, I've honed my skills in both areas, believing that the best digital products are born from a deep understanding of both aesthetics and implementation.
+  My work focuses on creating testing infrastructure that developers actually love to use. I'm the creator and lead maintainer of the **CAT (Component Accessibility Testing) Framework**, an observer-based testing framework that seamlessly integrates with Playwright, Cypress, and WebdriverIO to provide continuous accessibility monitoring during test execution.
 
-  ### My Design Philosophy
+  ### My Journey
 
-  My design philosophy is rooted in **empathy** and **problem-solving**. I believe great design starts with understanding the 'why' – the user's needs, motivations, and pain points. I use research, iterative prototyping (often with tools like Figma), and user testing to ensure the solutions I build are truly effective.
+  I currently lead accessibility infrastructure development at **Fidelity Investments**, where I build enterprise-scale developer tools for over 10,000 developers. Before that, I spent seven years at **Deque Systems**, the industry leader in accessibility solutions, where I progressed from leading development services projects to managing product teams building enterprise accessibility dashboards and testing tools.
 
-  I strive to create interfaces that feel effortless, where functionality and beauty work hand-in-hand. Whether I'm crafting pixel-perfect UIs or writing clean Vue.js/Nuxt.js code, my focus is always on creating value for the end-user.
+  ### My Philosophy
+
+  I believe the best developer tools are ones that integrate seamlessly into existing workflows with zero friction. Whether it's designing APIs, architecting plugin systems, or building browser extensions, my focus is always on creating tools that provide immediate value while being easy to adopt and maintain.<br /><br />
+
+  Great accessibility testing shouldn't require developers to change how they work—it should enhance their existing processes. That's why I focus on building solutions that use familiar patterns like dependency injection, plugin architectures, and observer patterns to deliver powerful capabilities without complexity.
 
   ### What Drives Me
 
-  What keeps me excited about this work is the constant learning and the challenge of translating complex ideas into simple, elegant solutions. There's nothing more rewarding than seeing a design come to life and knowing it's making someone's digital interaction easier or more enjoyable.
+  What keeps me excited about this work is the intersection of three things I'm passionate about:
 
-  ### Beyond the Screen
+  - **Developer Experience**: Creating tools with thoughtful API design and comprehensive documentation that developers actually enjoy using
+  - **Accessibility**: Making the web more inclusive by building infrastructure that makes accessibility testing as easy as possible
+  - **Open Source**: Contributing back to the community and helping others solve similar challenges
 
-  When I'm not designing or coding, you might find me exploring Boston's latest coffee shops, hiking nearby trails, or occasionally contributing to open-source projects.
+  Currently, I'm researching and prototyping a **Storybook Accessibility Addon** that will bring real-time accessibility feedback to component-driven development workflows, inspired by successful freemium models in the ecosystem.
 
-  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
-images:
-  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My coffee workspace
-  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My trip to Tokyo
+  ### Technical Expertise
+
+  My technical toolkit centers around TypeScript and modern JavaScript frameworks (React, Vue, Angular, Web Components). I specialize in:
+
+  - Building testing infrastructure with Playwright, Cypress, and WebdriverIO
+  - Component-driven development with Storybook
+  - Monorepo architecture using Turborepo and PNPM workspaces
+  - Browser extension development
+  - Plugin architecture and API design
+  - CI/CD integration and automation
+
+  ### Beyond the Code
+
+  When I'm not building developer tools or contributing to open source projects, I enjoy golf, cycling, and spending time with my family.<br /><br />
+
+  Thanks for stopping by! Feel free to check out my [open source projects](/projects), read my [technical writing](/blog), or [get in touch on LinkedIn](https://www.linkedin.com/in/tonykornmeier/) if you'd like to collaborate!

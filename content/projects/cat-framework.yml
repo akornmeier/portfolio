@@ -1,0 +1,6 @@
+title: CAT Framework (Component Accessibility Testing)
+description: I built this because I was tired of accessibility testing being bolted on as an afterthought. CAT runs continuously during your existing Playwright, Cypress, or WebdriverIO tests—no changes to your test code required. It watches for UI changes using observers and catches accessibility issues in real-time. The DOM fingerprinting system I added keeps test reports clean by filtering out duplicate violations. It's the testing tool I wish I'd had years ago.
+image: https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1470&q=80
+url: 'https://github.com/akornmeier'
+tags: ['TypeScript', 'Testing', 'Accessibility', 'Open Source']
+date: '2023'

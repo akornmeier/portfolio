@@ -1,0 +1,28 @@
+{
+  "rules": {
+    "typescript/no-explicit-any": "warn",
+    "unicorn/filename-case": "off"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "globals": {
+    "NodeJS": true,
+    "defineNuxtConfig": true,
+    "definePageMeta": true,
+    "defineRouteRules": true,
+    "useHead": true,
+    "useSeoMeta": true,
+    "useRoute": true,
+    "useRouter": true,
+    "navigateTo": true,
+    "defineNuxtComponent": true,
+    "useAsyncData": true,
+    "useFetch": true,
+    "useState": true,
+    "useRuntimeConfig": true,
+    "useAppConfig": true
+  }
+}
